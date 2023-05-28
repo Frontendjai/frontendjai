@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    display: grid;/*Center the Text*/
+    place-items: center;
+    background: #111;
+}
+/* Loader Code */
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #A500FF;
+    border-bottom-color: #ffa500;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+/* Animation */
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

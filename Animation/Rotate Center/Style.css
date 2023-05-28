@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    display: grid;/*Center the Text*/
+    place-items: center;
+    background: #111;
+}
+div.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.item {
+    width: 100px; height: 100px; 
+    background-color:#A500FF; 
+    animation-name: rotate-center;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes rotate-center {
+    0% {
+        transform:rotate(0);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}

@@ -1,0 +1,51 @@
+  body{
+    height: 100vh;
+    display: grid;/*Center the Text*/
+    place-items: center;
+  }
+  .btn {
+    background: #111;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.6em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+  }
+  .btn:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+
+  .btn .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.3em;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  .btn .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #111;
+  }
+  .btn:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  .btn:active .icon {
+    transform: scale(0.95);
+  }

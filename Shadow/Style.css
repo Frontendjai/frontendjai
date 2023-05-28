@@ -1,0 +1,21 @@
+  body{
+    font-family: 'Poppins', sans-serif;
+    background: #A500FF;
+    color: #ffffff;
+    transition: 4s;
+  }
+  
+  h2{
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    font-size: 60px;
+    letter-spacing: 5px;
+    top: 50%;
+    position: absolute;
+    margin-top: -40px;
+    transition: 4s;
+    text-shadow: -1px -1px 0px #A500FF,
+      3px 3px 0px #A500FF,
+      6px 6px 0px #000055;
+  }
