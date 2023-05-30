@@ -1,0 +1,45 @@
+  body{
+    height: 100vh;
+    display: grid;/*Center the Text*/
+    place-items: center;
+  }
+  
+  /* Removing default button style */
+  .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.6);
+  }
+
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: #111;
+    width: 0%;
+    inset: 0;
+    border-right: 6px solid #111;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px #111;
+  }
+
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+  }
