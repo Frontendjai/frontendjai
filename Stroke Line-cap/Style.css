@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+    display: grid;/*Center the Text*/
+    place-items: center;
+    background: #fff;
+}
+
+.module {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+line {
+    stroke: #111;
+    stroke-width: 20;
+}
+
+.stroke-1 {
+    stroke-linecap: butt;
+}
+.stroke-2 {
+    stroke-linecap: square;
+}
+.stroke-3 {
+    stroke-linecap: round;
+}
